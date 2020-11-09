@@ -19,7 +19,6 @@ io.on("connection", (socket) => {
         text: "Welcome to the chat app",
         createdAt: new Date().getTime()
     });
-
     socket.broadcast.emit('newMessage', {
         from: "Admin",
         text: "New user joined",
